@@ -85,7 +85,7 @@ foreach ($result as $row) {
 
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="assets/uploads/<?php echo $favicon; ?>">
-
+	<link href="https://fonts.googleapis.com/css2?family=YourSelectedFont&display=swap" rel="stylesheet">
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -279,9 +279,9 @@ foreach ($result as $row) {
 		<div class="container">
 			<div class="row inner">
 				<div class="col-md-4 logo">
-					<a href="index.php"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image"></a>
+					<a href="index.php"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image">Chingu Pingu</a>
 				</div>
-
+	
 				<div class="col-md-5 right">
 					<ul>
 
@@ -299,28 +299,7 @@ foreach ($result as $row) {
 						}
 						?>
 
-						<li><a href="cart.php"><i class="fa fa-shopping-cart"></i> <?php echo LANG_VALUE_18; ?> (<?php echo LANG_VALUE_1; ?><?php
-																																			if (isset($_SESSION['cart_p_id'])) {
-																																				$table_total_price = 0;
-																																				$i = 0;
-																																				foreach ($_SESSION['cart_p_qty'] as $key => $value) {
-																																					$i++;
-																																					$arr_cart_p_qty[$i] = $value;
-																																				}
-																																				$i = 0;
-																																				foreach ($_SESSION['cart_p_current_price'] as $key => $value) {
-																																					$i++;
-																																					$arr_cart_p_current_price[$i] = $value;
-																																				}
-																																				for ($i = 1; $i <= count($arr_cart_p_qty); $i++) {
-																																					$row_total_price = $arr_cart_p_current_price[$i] * $arr_cart_p_qty[$i];
-																																					$table_total_price = $table_total_price + $row_total_price;
-																																				}
-																																				echo $table_total_price;
-																																			} else {
-																																				echo '0.00';
-																																			}
-																																			?>)</a></li>
+						<li><a href="cart.php"><i class="fa fa-shopping-cart"></i> <?php echo LANG_VALUE_18; ?> </a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 search-area">

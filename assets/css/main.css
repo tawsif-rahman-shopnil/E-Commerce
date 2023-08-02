@@ -131,7 +131,6 @@ a:hover {
   background: #1c257e;
   color: #fff;
 }
-
 .header {
   width: 100%;
   height: auto;
@@ -144,6 +143,7 @@ a:hover {
 }
 
 .header .logo {
+  font-family: 'Outfit', sans-serif;
   float: none;
   display: table-cell;
   vertical-align: middle;
